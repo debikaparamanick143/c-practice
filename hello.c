@@ -1,8 +1,12 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
 
-    printf ("hello world \n");
-printf ("hello world \n");
+    int age;
+    printf ("enter age");
+    scanf ("%d",&age);
+    age>18? printf ("adult \n"):printf ("not adult \n");
+    
 
 
     return 0;
