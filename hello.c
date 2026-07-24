@@ -1,12 +1,10 @@
 #include<stdio.h>
-#include<math.h>
-int main(){
-
-    int age;
-    printf ("enter age");
-    scanf ("%d",&age);
-    age>18? printf ("adult \n"):printf ("not adult \n");
-    
+//area of squre 
+int main (){
+   float radius ;
+   printf ("enter radius");
+   scanf ("%f", &radius);
+   printf ("area is:%f", 3.14*radius *radius);
 
 
     return 0;
