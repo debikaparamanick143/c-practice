@@ -4,7 +4,7 @@ int main (){
    int x;
    printf ("enter a number");
    scanf ("%d", & x);
-   printf ("%d", x%2==0);
+   printf ("%d", x%4==0);
     
 
    return 0;
