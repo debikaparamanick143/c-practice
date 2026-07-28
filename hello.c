@@ -1,21 +1,10 @@
 #include<stdio.h>
 
 int main (){
-   int marks;
-   printf ("enter number(0-100)");
-   scanf ("%d", &marks);
+  for (int i=1; i<=100; i=i+1){
+  printf ("%d \n",i);
+  }
+ 
 
-   if (marks<=30){
-      printf ("c \n");
-   }
-else if (marks>=30 && marks<70){
-     printf ("b \n");
-}
-else if (marks >=70 && marks <90){
-   printf ("a \n");
-}
- else {
-   printf ("a+ \n");
- }  
    return 0;
-   }
+}
