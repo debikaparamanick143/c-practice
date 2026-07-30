@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main (){
-for (int i=1; i<=10; i++){
-   if (i==6){ // skip
-      continue;
-   }
-   printf ("%d \n ", i);
+for (int i=5; i<=50; i++){
+   if (i %2 !=0){
+      printf ("%d \n", i);
+  } //odd
 }
    return 0;
 }
