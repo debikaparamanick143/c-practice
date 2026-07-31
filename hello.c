@@ -1,9 +1,21 @@
 #include<stdio.h>
-int main (){
-for (int i=5; i<=50; i++){
-   if (i %2 !=0){
-      printf ("%d \n", i);
-  } //odd
+
+//declaration /prototype
+void printhello();
+void printgoodbye();
+
+int main () {
+printhello();//function call
+printgoodbye();
+return 0;
 }
-   return 0;
+//function defination
+void printhello(){
+  printf ("hello \n");
 }
+void printgoodbye(){
+  printf ("goodbye \n");
+}
+
+
+     
