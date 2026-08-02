@@ -1,22 +1,13 @@
 #include<stdio.h>
-int sum (int a, int b);
-void printtable (int n);
+void calculateprice (float value);
 
-int main(){
-int n;
-printf ("enter number :");
-scanf ("%d", & n);
+int main (){
+    float value =100.0;
+    calculateprice (value);
+    return 0;
+}
+void calculateprice (float value){
+    value = value + (0.18* value);
+    printf ("final price is :% f", value);
 
-printtable (n); // argument parameter
-return 0;
 }
-
-int sum (int x, int y){
-    return x+y;
-}
-void printtable (int n){// parameter / formal parameter}
-    for (int i=1; i<=10; i++){
-        printf ("%d \n", i*n);
-    }
-}
- 
