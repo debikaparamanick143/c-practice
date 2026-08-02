@@ -1,28 +1,22 @@
 #include<stdio.h>
- 
+int sum (int a, int b);
+void printtable (int n);
 
-void namaste ();
-void bonjour();
+int main(){
+int n;
+printf ("enter number :");
+scanf ("%d", & n);
 
-int main () {
-printf ("enter f for france &i for indian");
-char ch;
-scanf ("%c", &ch);
-if (ch=='i'){
-  namaste();
-}else{
-  bonjour();
-
-}
+printtable (n); // argument parameter
 return 0;
 }
 
-void namaste(){
-  printf ("namaste \n");
+int sum (int x, int y){
+    return x+y;
 }
-void bonjour(){
-  printf ("bonjour \n");
+void printtable (int n){// parameter / formal parameter}
+    for (int i=1; i<=10; i++){
+        printf ("%d \n", i*n);
+    }
 }
-
-
-     
+ 
