@@ -1,13 +1,15 @@
 #include<stdio.h>
-void calculateprice (float value);
+void printhello (int count);
 
 int main (){
-    float value =100.0;
-    calculateprice (value);
+    printhello (10);
     return 0;
 }
-void calculateprice (float value){
-    value = value + (0.18* value);
-    printf ("final price is :% f", value);
-
+//recursive function
+void printhello (int count){
+    if (count == 0){
+        return;
+    }
+    printf ("HELLO WORLD \n");
+    printhello (count -1);
 }
