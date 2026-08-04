@@ -1,15 +1,29 @@
 #include<stdio.h>
-void printhello (int count);
+
+int fact (int n);
 
 int main (){
-    printhello (10);
+    printf ("factorial is : %d", fact (3));
     return 0;
 }
-//recursive function
-void printhello (int count){
-    if (count == 0){
-        return;
-    }
-    printf ("HELLO WORLD \n");
-    printhello (count -1);
+int fact (int n){
+if (n==0){
+return 1;
 }
+int factNm1 = fact (n-1);
+int factN =factNm1*n;
+return factN;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
